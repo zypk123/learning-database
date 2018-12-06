@@ -24,7 +24,7 @@ public class RedisSessionDao extends AbstractSessionDAO {
     @Autowired
     private JedisUtil jedisUtil;
 
-    private final String SHIRO_SESSION_PREFIX = "zhang-session:";
+    private final static String SHIRO_SESSION_PREFIX = "zhang-session:";
 
     @Override
     protected Serializable doCreate(Session session) {

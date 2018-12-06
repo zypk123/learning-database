@@ -20,7 +20,7 @@ public class RedisCache<K, V> implements Cache<K, V> {
     @Autowired
     private JedisUtil jedisUtil;
 
-    private final String CACHE_PREFIX = "zhang-cache:";
+    private final static String CACHE_PREFIX = "zhang-cache:";
 
     private byte[] getKey(K k) {
         if (k instanceof String) {
